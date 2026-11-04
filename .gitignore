@@ -1,0 +1,13 @@
+/target
+.env*
+
+# Vault data and backups: never commit real secrets.
+*.yabbt
+*.age
+*.kdbx
+*.kdbx.*.bak
+*.json.bak
+*.bak
+
+# Local agent tooling
+.claude/

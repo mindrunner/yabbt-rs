@@ -1,0 +1,12 @@
+[
+  {
+    "id": "item-1",
+    "attachments": [
+      {
+        "id": "attachment-1",
+        "fileName": "recovery.txt",
+        "size": 13
+      }
+    ]
+  }
+]

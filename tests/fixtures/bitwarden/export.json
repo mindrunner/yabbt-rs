@@ -1,0 +1,45 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "folder-1",
+      "name": "Infrastructure"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-1",
+      "organizationId": null,
+      "folderId": "folder-1",
+      "type": 1,
+      "name": "Example Login",
+      "notes": "important note",
+      "favorite": true,
+      "login": {
+        "username": "alice",
+        "password": "correct horse battery staple",
+        "totp": "otpauth://totp/example",
+        "uris": [
+          {
+            "uri": "https://example.test"
+          }
+        ]
+      },
+      "fields": [
+        {
+          "name": "env",
+          "value": "prod",
+          "type": 0
+        },
+        {
+          "name": "pin",
+          "value": "1234",
+          "type": 1
+        }
+      ],
+      "unexpectedFutureField": {
+        "keep": true
+      }
+    }
+  ]
+}
