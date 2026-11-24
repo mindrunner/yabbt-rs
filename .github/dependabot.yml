@@ -12,6 +12,11 @@ updates:
     commit-message:
       prefix: chore
       include: scope
+    ignore:
+      # age 0.12 pulls in p256 with crypto-bigint 0.5 (RUSTSEC-2026-0387),
+      # which fails cargo audit. Drop this once that is fixed upstream.
+      - dependency-name: age
+        versions: [">=0.12"]
     groups:
       # Patch and minor updates land as one PR per week; each major update
       # gets its own PR so breaking changes can be reviewed separately.
